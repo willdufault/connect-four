@@ -1,0 +1,10 @@
+^C:\VSCODE PROJECTS\VSCODE_CPP\CONNECT_4\BUILD\CMAKEFILES\086E897BF9B6052FE84C30B58D840CC9\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/vscode projects/vscode_cpp/connect_4" "-BC:/vscode projects/vscode_cpp/connect_4/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/vscode projects/vscode_cpp/connect_4/build/connect_4.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

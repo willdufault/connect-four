@@ -1,0 +1,22 @@
+CLASSES:
+board
+tile
+piece
+
+DISTRIBUTION:
+board:
+- contains tiles
+- win check
+tile:
+- contains piece*
+- coordinate
+piece:
+- color
+
+BUGS:
+- none
+
+TODO:
+- optimize everything and add comments
+- make this a cmake project (need this to include sfml)
+- add gui (make run in console window)

@@ -1,0 +1,10 @@
+^C:\VSCODE PROJECTS\VSCODE_CPP\CONNECT_4\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/vscode projects/vscode_cpp/connect_4" "-BC:/vscode projects/vscode_cpp/connect_4/build" --check-stamp-file "C:/vscode projects/vscode_cpp/connect_4/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
